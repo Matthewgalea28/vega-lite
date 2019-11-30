@@ -127,7 +127,7 @@ function getStackGroups(model: UnitModel) {
       };
       // Inner group should revert the x translation, and pass height through
       innerGroupEncode = {
-        x: {signal: '-' + stackFieldGroup('min', 'parent')},
+        x: {field: {group: 'x'}, mult: -1},
         height: {field: {group: 'height'}}
       };
       // The marks should use the same height as group, without y/yc/y2 properties (because it's already done by group)
@@ -145,7 +145,7 @@ function getStackGroups(model: UnitModel) {
         clip: {value: true}
       };
       innerGroupEncode = {
-        y: {signal: '-' + stackFieldGroup('min', 'parent')},
+        y: {field: {group: 'y'}, mult: -1},
         width: {field: {group: 'width'}}
       };
       mark.encode.update = {
