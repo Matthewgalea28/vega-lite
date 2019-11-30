@@ -278,9 +278,7 @@
               "type": "group",
               "encode": {
                 "update": {
-                  "y": {
-                    "signal": "-min(scale('child__repeat_repeat_Horsepower_y',parent[\"min___count_start\"]),scale('child__repeat_repeat_Horsepower_y',parent[\"max___count_start\"]),scale('child__repeat_repeat_Horsepower_y',parent[\"min___count_end\"]),scale('child__repeat_repeat_Horsepower_y',parent[\"max___count_end\"]))"
-                  },
+                  "y": {"field": {"group": "y"}, "mult": -1},
                   "width": {"field": {"group": "width"}}
                 }
               },
@@ -413,9 +411,7 @@
               "type": "group",
               "encode": {
                 "update": {
-                  "y": {
-                    "signal": "-min(scale('child__repeat_repeat_Miles_per_Gallon_y',parent[\"min___count_start\"]),scale('child__repeat_repeat_Miles_per_Gallon_y',parent[\"max___count_start\"]),scale('child__repeat_repeat_Miles_per_Gallon_y',parent[\"min___count_end\"]),scale('child__repeat_repeat_Miles_per_Gallon_y',parent[\"max___count_end\"]))"
-                  },
+                  "y": {"field": {"group": "y"}, "mult": -1},
                   "width": {"field": {"group": "width"}}
                 }
               },
@@ -548,9 +544,7 @@
               "type": "group",
               "encode": {
                 "update": {
-                  "y": {
-                    "signal": "-min(scale('child__repeat_repeat_Acceleration_y',parent[\"min___count_start\"]),scale('child__repeat_repeat_Acceleration_y',parent[\"max___count_start\"]),scale('child__repeat_repeat_Acceleration_y',parent[\"min___count_end\"]),scale('child__repeat_repeat_Acceleration_y',parent[\"max___count_end\"]))"
-                  },
+                  "y": {"field": {"group": "y"}, "mult": -1},
                   "width": {"field": {"group": "width"}}
                 }
               },
@@ -683,9 +677,7 @@
               "type": "group",
               "encode": {
                 "update": {
-                  "y": {
-                    "signal": "-min(scale('child__repeat_repeat_Displacement_y',parent[\"min___count_start\"]),scale('child__repeat_repeat_Displacement_y',parent[\"max___count_start\"]),scale('child__repeat_repeat_Displacement_y',parent[\"min___count_end\"]),scale('child__repeat_repeat_Displacement_y',parent[\"max___count_end\"]))"
-                  },
+                  "y": {"field": {"group": "y"}, "mult": -1},
                   "width": {"field": {"group": "width"}}
                 }
               },

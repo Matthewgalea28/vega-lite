@@ -78,9 +78,7 @@
           "type": "group",
           "encode": {
             "update": {
-              "y": {
-                "signal": "-min(scale('y',parent[\"min___count_start\"]),scale('y',parent[\"max___count_start\"]),scale('y',parent[\"min___count_end\"]),scale('y',parent[\"max___count_end\"]))"
-              },
+              "y": {"field": {"group": "y"}, "mult": -1},
               "width": {"field": {"group": "width"}}
             }
           },

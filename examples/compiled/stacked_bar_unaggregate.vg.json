@@ -72,9 +72,7 @@
           "type": "group",
           "encode": {
             "update": {
-              "y": {
-                "signal": "-min(scale('y',parent[\"min_b_start\"]),scale('y',parent[\"max_b_start\"]),scale('y',parent[\"min_b_end\"]),scale('y',parent[\"max_b_end\"]))"
-              },
+              "y": {"field": {"group": "y"}, "mult": -1},
               "width": {"field": {"group": "width"}}
             }
           },
